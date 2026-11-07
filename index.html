@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بلوم | Bloom Skin Clinic — زيونة، بغداد</title>
+<meta name="description" content="بلوم لطب وتجميل البشرة في زيونة، بغداد. ليزر، تنظيف بشرة، علاج حب الشباب والتصبغات، ونظام مواعيد يحترم وقتك.">
+<meta name="theme-color" content="#0D5C63">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/app.css">
+<link rel="icon" href="/assets/logo-mark.svg" type="image/svg+xml">
+</head>
+<body>
+
+<!-- Reusable SVG symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="bloom-mark" viewBox="-70 -70 140 140">
+      <g fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round">
+        <g id="petal"><path d="M0,-20 C 22,-30 26,-62 0,-64 C -26,-62 -22,-30 0,-20 Z"/></g>
+        <use href="#petal" transform="rotate(60)"/>
+        <use href="#petal" transform="rotate(120)"/>
+        <use href="#petal" transform="rotate(180)"/>
+        <use href="#petal" transform="rotate(240)"/>
+        <use href="#petal" transform="rotate(300)"/>
+        <rect x="-15" y="-15" width="30" height="30" rx="8" transform="rotate(45)"/>
+      </g>
+      <circle cx="0" cy="0" r="3.5" fill="#F2784B"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3c3 4.5 6 7.8 6 11a6 6 0 0 1-12 0c0-3.2 3-6.5 6-11z"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3c.8 4.6 3.4 7.2 8 8-4.6.8-7.2 3.4-8 8-.8-4.6-3.4-7.2-8-8 4.6-.8 7.2-3.4 8-8z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M4 5h16v11H9l-5 4z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header" id="top">
+  <div class="container nav">
+    <a href="#top" class="brand" aria-label="بلوم — الصفحة الرئيسية">
+      <svg class="brand-mark"><use href="#bloom-mark"/></svg>
+      <span class="brand-text"><span class="brand-latin">Bloom</span><span class="brand-ar brand-by">by Nada</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="القائمة الرئيسية">
+      <a href="#treatments">العلاجات</a>
+      <a href="#how">المواعيد</a>
+      <a href="#results">النتائج</a>
+      <a href="#doctor">الدكتورة</a>
+      <a href="#reviews">آراؤكم</a>
+      <a href="#visit">موقعنا</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#book" class="btn btn-coral btn-sm">احجز موعدك</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="hero-bloom" aria-hidden="true"><use href="#bloom-mark"/></svg>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Bloom Skin Clinic · زيونة، بغداد</p>
+        <h1>بشرتك تتفتّح.<br><span>ووقتك محترم.</span></h1>
+        <p class="lead">عيادة متخصصة بطب وتجميل البشرة: ليزر، تنظيف عميق، علاج حب الشباب والتصبغات، وكل احتياجات بشرتك. موعدك محجوز إلك، وتتابعين دورك من موبايلك.</p>
+        <div class="hero-cta">
+          <a href="#book" class="btn btn-coral">احجزي موعدك</a>
+          <a href="#treatments" class="btn btn-ghost-light">شوفي العلاجات</a>
+        </div>
+        <p class="latin-tag">Bloom, on your time.</p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="tag-card">
+          <span class="tag-hole"></span>
+          <svg class="tag-mark"><use href="#bloom-mark"/></svg>
+          <div class="tag-latin">Bloom</div>
+          <div class="tag-ar tag-by">by Nada</div>
+          <div class="tag-label">موعدك القادم</div>
+          <div class="tag-time">الخميس · 4:30 مساءً</div>
+          <div class="tag-line">بشرتك تتفتّح.<br>ووقتك محترم.</div>
+        </div>
+        <div class="queue-chip">
+          <span class="pulse"></span>
+          <div>
+            <strong>دورك بعد مراجعتين</strong>
+            <small>bloom.iq/q/A12</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK LINKS (mirrors the identity's highlight icons) -->
+  <section class="quick">
+    <div class="container quick-row">
+      <a href="#how" class="quick-item"><span class="qi teal"><svg><use href="#i-clock"/></svg></span>المواعيد</a>
+      <a href="#treatments" class="quick-item"><span class="qi coral"><svg><use href="#i-drop"/></svg></span>العلاجات</a>
+      <a href="#results" class="quick-item"><span class="qi teal"><svg><use href="#i-spark"/></svg></span>النتائج</a>
+      <a href="#reviews" class="quick-item"><span class="qi coral"><svg><use href="#i-chat"/></svg></span>آراؤكم</a>
+      <a href="#doctor" class="quick-item"><span class="qi teal"><svg><use href="#i-user"/></svg></span>الدكتورة</a>
+    </div>
+  </section>
+
+  <!-- WELCOME BACK -->
+  <section class="welcome pattern-bg">
+    <div class="container">
+      <div class="welcome-card reveal">
+        <h2>أهلاً بيك<br>من جديد</h2>
+        <p>رجعنا بفريق جديد، ونظام مواعيد يحترم وقتك.<br>شكراً لأنك أعطيتنا فرصة ثانية.</p>
+        <p class="sign">— فريق بلوم</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TREATMENTS -->
+  <section class="section" id="treatments">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow dark">العلاجات</p>
+        <h2>كل اللي تحتاجه بشرتك، بمكان واحد</h2>
+        <p>نبدأ دائماً بفحص وتقييم لبشرتك، وبعدها نختار وياك العلاج المناسب.</p>
+      </div>
+
+      <div class="filters reveal" role="tablist" aria-label="تصنيف العلاجات">
+        <button class="chip active" data-filter="all" role="tab" aria-selected="true">الكل</button>
+        <button class="chip" data-filter="laser" role="tab" aria-selected="false">ليزر</button>
+        <button class="chip" data-filter="care" role="tab" aria-selected="false">عناية وتنظيف</button>
+        <button class="chip" data-filter="medical" role="tab" aria-selected="false">علاجي</button>
+        <button class="chip" data-filter="rejuv" role="tab" aria-selected="false">نضارة وشباب</button>
+      </div>
+
+      <div class="cards" id="treatmentCards">
+        <article class="card reveal" data-cat="laser">
+          <span class="card-icon teal"><svg><use href="#i-spark"/></svg></span>
+          <h3>إزالة الشعر بالليزر</h3>
+          <p>جلسات ليزر لكل أنواع البشرة، للوجه والجسم، بنتائج تدوم.</p>
+          <div class="card-meta"><span>٣٠–٩٠ دقيقة</span><a href="#book" data-service="laser-hair">احجز ←</a></div>
+        </article>
+        <article class="card reveal" data-cat="laser">
+          <span class="card-icon coral"><svg><use href="#i-spark"/></svg></span>
+          <h3>ليزر التصبغات والكلف</h3>
+          <p>يخفف البقع الداكنة والكلف وآثار الشمس، ويوحّد لون البشرة.</p>
+          <div class="card-meta"><span>٣٠ دقيقة</span><a href="#book" data-service="laser-pigment">احجز ←</a></div>
+        </article>
+        <article class="card reveal" data-cat="laser rejuv">
+          <span class="card-icon teal"><svg><use href="#i-spark"/></svg></span>
+          <h3>ليزر الفراكشنال</h3>
+          <p>لآثار حب الشباب والندبات والمسامات الواسعة وتجديد سطح البشرة.</p>
+          <div class="card-meta"><span>٤٥ دقيقة</span><a href="#book" data-service="fractional">احجز ←</a></div>
+        </article>
+        <article class="card reveal" data-cat="care">
+          <span class="card-icon coral"><svg><use href="#i-drop"/></svg></span>
+          <h3>تنظيف البشرة العميق</h3>
+          <p>تنظيف وتقشير وترطيب، يشيل الرؤوس السوداء ويرجّع لبشرتك نضارتها.</p>
+          <div class="card-meta"><span>٦٠ دقيقة</span><a href="#book" data-service="deep-clean">احجز ←</a></div>
+        </article>
+        <article class="card reveal" data-cat="care">
+          <span class="card-icon teal"><svg><use href="#i-drop"/></svg></span>
+          <h3>هايدرافيشل</h3>
+          <p>تنظيف وترطيب بالشفط المائي والسيرومات، تطلعين منه بنفس اليوم بإشراقة.</p>
+          <div class="card-meta"><span>٤٥ دقيقة</span><a href="#book" data-service="hydrafacial">احجز ←</a></div>
+        </article>
+        <article class="card reveal" data-cat="care rejuv">
+          <span class="card-icon coral"><svg><use href="#i-drop"/></svg></span>
+          <h3>التقشير الكيميائي</h3>
+          <p>تقشير بدرجات مختلفة حسب حاجة بشرتك، للبهتان والخطوط الناعمة.</p>
+          <div class="card-meta"><span>٣٠ دقيقة</span><a href="#book" data-service="peel">احجز ←</a></div>
+        </article>
+        <article class="card reveal" data-cat="medical">
+          <span class="card-icon teal"><svg><use href="#i-user"/></svg></span>
+          <h3>علاج حب الشباب</h3>
+          <p>خطة علاج متكاملة: أدوية، جلسات، وروتين بيتي تتابعه الدكتورة وياك.</p>
+          <div class="card-meta"><span>استشارة + متابعة</span><a href="#book" data-service="acne">احجز ←</a></div>
+        </article>
+        <article class="card reveal" data-cat="medical">
+          <span class="card-icon coral"><svg><use href="#i-user"/></svg></span>
+          <h3>الأمراض الجلدية</h3>
+          <p>تشخيص وعلاج الإكزيما والصدفية والحساسية والتهابات الجلد وتساقط الشعر.</p>
+          <div class="card-meta"><span>٢٠ دقيقة</span><a href="#book" data-service="derm">احجز ←</a></div>
+        </article>
+        <article class="card reveal" data-cat="rejuv">
+          <span class="card-icon teal"><svg><use href="#i-spark"/></svg></span>
+          <h3>البوتوكس والفيلر</h3>
+          <p>لمسات طبيعية تخفف التجاعيد وتعيد الامتلاء، بدون مبالغة.</p>
+          <div class="card-meta"><span>٣٠ دقيقة</span><a href="#book" data-service="botox">احجز ←</a></div>
+        </article>
+        <article class="card reveal" data-cat="rejuv">
+          <span class="card-icon coral"><svg><use href="#i-drop"/></svg></span>
+          <h3>الميزوثيرابي والبلازما</h3>
+          <p>حقن مغذّية للبشرة وفروة الرأس، للنضارة وتقوية الشعر.</p>
+          <div class="card-meta"><span>٣٠ دقيقة</span><a href="#book" data-service="meso">احجز ←</a></div>
+        </article>
+        <article class="card card-feature reveal" data-cat="medical care laser rejuv">
+          <span class="card-icon light"><svg><use href="#i-chat"/></svg></span>
+          <h3>مو متأكدة شنو تحتاجين؟</h3>
+          <p>احجزي استشارة وفحص بشرة، والدكتورة تحدد وياك الخطة الأنسب.</p>
+          <div class="card-meta"><span>٢٠ دقيقة</span><a href="#book" data-service="consult">احجزي استشارة ←</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW BOOKING WORKS -->
+  <section class="section how" id="how">
+    <div class="container how-grid">
+      <div class="reveal">
+        <p class="eyebrow dark">المواعيد</p>
+        <h2>نظام مواعيد يحترم وقتك</h2>
+        <p class="muted">ما نريدك تنتظرين ساعة بالاستقبال. تحجزين وقت محدد، يوصلك تأكيد على الواتساب، وتتابعين دورك مباشرة من الرابط.</p>
+        <ol class="steps">
+          <li><span>١</span><div><strong>اختاري العلاج والوقت</strong><p>من الموقع، بأقل من دقيقة.</p></div></li>
+          <li><span>٢</span><div><strong>يوصلك التأكيد</strong><p>رسالة واتساب بيها الموعد واسم الدكتورة.</p></div></li>
+          <li><span>٣</span><div><strong>تابعي دورك مباشرة</strong><p>رابط يبيّن دورك لحظة بلحظة، فتجين بالوقت الصح.</p></div></li>
+        </ol>
+      </div>
+
+      <div class="phone reveal" aria-label="مثال على رسالة تأكيد الموعد">
+        <div class="phone-head">
+          <span class="avatar"><svg><use href="#bloom-mark"/></svg></span>
+          <div><strong>Bloom Skin Clinic</strong><small>حساب أعمال موثّق</small></div>
+        </div>
+        <div class="phone-body">
+          <div class="bubble">
+            هلا سارة،<br>
+            موعدك تأكّد يوم الخميس الساعة 4:30 مساءً مع [اسم الدكتورة].<br>
+            تگدرين تتابعين دورك مباشرة من الرابط:
+            <a href="#book" class="bubble-link" dir="ltr">bloom.iq/q/A12</a>
+            <small>4:02 م</small>
+          </div>
+          <div class="phone-actions">
+            <span class="btn btn-coral btn-sm">أكيد، جاية</span>
+            <span class="btn btn-outline btn-sm">أريد أغيّر الموعد</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="section" id="results">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow dark">النتائج</p>
+        <h2>نتائج حقيقية، بخطوات مدروسة</h2>
+        <p>صور قبل وبعد من مراجعاتنا، بموافقتهن.</p>
+      </div>
+      <div class="results-grid">
+        <figure class="result reveal"><div class="ba"><span>قبل</span><span>بعد</span></div><figcaption>آثار حب الشباب · ٤ جلسات فراكشنال</figcaption></figure>
+        <figure class="result reveal"><div class="ba"><span>قبل</span><span>بعد</span></div><figcaption>تصبغات وكلف · ٦ جلسات ليزر</figcaption></figure>
+        <figure class="result reveal"><div class="ba"><span>قبل</span><span>بعد</span></div><figcaption>نضارة البشرة · هايدرافيشل + تقشير</figcaption></figure>
+      </div>
+      <p class="placeholder-note">* مساحة لصور قبل/بعد الحقيقية من العيادة.</p>
+    </div>
+  </section>
+
+  <!-- DOCTOR -->
+  <section class="section doctor" id="doctor">
+    <div class="container doctor-grid">
+      <div class="doctor-photo reveal" aria-hidden="true">
+        <svg><use href="#bloom-mark"/></svg>
+        <span>صورة الدكتورة</span>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">الدكتورة</p>
+        <h2>[اسم الدكتورة]</h2>
+        <p class="role">اختصاص الأمراض الجلدية والتجميل</p>
+        <p>نبذة قصيرة عن الدكتورة: شهاداتها، سنوات الخبرة، وفلسفتها بالعلاج. بلوم تؤمن إن كل بشرة إلها قصتها، فنسمع قبل ما نعالج، ونشرحلك كل خطوة.</p>
+        <ul class="ticks">
+          <li><svg><use href="#i-check"/></svg>بورد / شهادة الاختصاص</li>
+          <li><svg><use href="#i-check"/></svg>أجهزة ليزر حديثة ومعتمدة</li>
+          <li><svg><use href="#i-check"/></svg>متابعة بعد كل جلسة</li>
+        </ul>
+        <a href="#book" class="btn btn-coral">احجزي مع الدكتورة</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow dark">آراؤكم</p>
+        <h2>شنو كالوا عنا</h2>
+      </div>
+      <div class="reviews">
+        <blockquote class="review reveal"><p>"أول مرة أدخل عيادة بوقتي بالضبط. الرابط كلّش مريح، عرفت دوري وأني بالسيارة."</p><cite>— مراجِعة، علاج تصبغات</cite></blockquote>
+        <blockquote class="review reveal"><p>"الدكتورة شرحتلي كل شي قبل ما نبدي، وبشرتي تغيّرت من ثالث جلسة."</p><cite>— مراجِعة، حب الشباب</cite></blockquote>
+        <blockquote class="review reveal"><p>"المكان نظيف وهادئ والفريق الجديد كلش لطيف. رجعتلهم وما ندمت."</p><cite>— مراجِعة، تنظيف بشرة</cite></blockquote>
+      </div>
+      <p class="placeholder-note">* نصوص تجريبية. تُستبدل بآراء حقيقية من المراجعين.</p>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="book-cta" id="book">
+    <svg class="cta-bloom" aria-hidden="true"><use href="#bloom-mark"/></svg>
+    <div class="container book-grid">
+      <div class="book-intro reveal">
+        <p class="eyebrow">احجزي موعدك</p>
+        <h2>جاهزة تتفتّحين؟</h2>
+        <p>اختاري العلاج والوقت اللي يناسبك. يوصلك رقم حجز ورابط تتابعين بيه دورك لحظة بلحظة.</p>
+        <ul class="ticks">
+          <li><svg><use href="#i-check"/></svg>بأقل من دقيقة، بدون مكالمات</li>
+          <li><svg><use href="#i-check"/></svg>تأكيد على الواتساب</li>
+          <li><svg><use href="#i-check"/></svg>تگدرين تغيّرين أو تلغين الموعد بسهولة</li>
+        </ul>
+      </div>
+
+      <div class="booker-wrap">
+        <form class="booker" id="booker" novalidate>
+          <div class="bk-step">
+            <label class="bk-label" for="bkService"><span>١</span>العلاج</label>
+            <select id="bkService" required><option value="">اختاري العلاج…</option></select>
+            <p class="bk-meta" id="bkDuration"></p>
+          </div>
+          <div class="bk-step">
+            <div class="bk-label"><span>٢</span>اليوم</div>
+            <div class="days" id="bkDays"><p class="hint">جاري التحميل…</p></div>
+          </div>
+          <div class="bk-step">
+            <div class="bk-label"><span>٣</span>الوقت</div>
+            <div class="slots" id="bkSlots"><p class="hint">اختاري العلاج أولاً.</p></div>
+          </div>
+          <div class="bk-step">
+            <div class="bk-label"><span>٤</span>معلوماتك</div>
+            <div class="fields">
+              <input id="bkName" placeholder="الاسم" autocomplete="name" maxlength="60" required>
+              <input id="bkPhone" type="tel" inputmode="tel" placeholder="07XX XXX XXXX" dir="ltr" autocomplete="tel" required>
+            </div>
+            <textarea id="bkNotes" rows="2" maxlength="300" placeholder="ملاحظات للدكتورة (اختياري)"></textarea>
+          </div>
+          <p class="bk-error" id="bkError" role="alert" hidden></p>
+          <button class="btn btn-coral bk-submit" id="bkSubmit" type="submit">ثبّتي الموعد</button>
+        </form>
+
+        <div class="booker bk-done" id="bkDone" hidden>
+          <span class="done-icon"><svg><use href="#i-check"/></svg></span>
+          <h3>موعدك تثبّت!</h3>
+          <p class="done-code">رقم الحجز <strong id="doneCode"></strong></p>
+          <div class="bubble" id="doneMsg"></div>
+          <div class="done-actions">
+            <a class="btn btn-coral" id="doneTrack" href="#">تابعي دورك</a>
+            <button class="btn btn-outline" type="button" id="doneAgain">حجز جديد</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="section visit" id="visit">
+    <div class="container visit-grid">
+      <div class="reveal">
+        <p class="eyebrow dark">موقعنا</p>
+        <h2>زورينا بزيونة</h2>
+        <ul class="info">
+          <li><svg><use href="#i-pin"/></svg><div><strong>العنوان</strong><span>زيونة، بغداد · [العنوان التفصيلي]</span></div></li>
+          <li><svg><use href="#i-clock"/></svg><div><strong>أوقات الدوام</strong><span>السبت – الخميس · ١٠ صباحاً – ٨ مساءً</span></div></li>
+          <li><svg><use href="#i-phone"/></svg><div><strong>الهاتف والواتساب</strong><span dir="ltr">+964 7XX XXX XXXX</span></div></li>
+        </ul>
+      </div>
+      <div class="map reveal" aria-label="خريطة الموقع">
+        <div class="map-pin"><svg><use href="#bloom-mark"/></svg></div>
+        <span>زيونة، بغداد</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#top" class="brand light">
+        <svg class="brand-mark"><use href="#bloom-mark"/></svg>
+        <span class="brand-text"><span class="brand-latin">Bloom</span><span class="brand-ar brand-by">by Nada</span></span>
+      </a>
+      <p class="footer-tag">بشرتك تتفتّح. ووقتك محترم.</p>
+    </div>
+    <nav class="footer-links" aria-label="روابط">
+      <a href="#treatments">العلاجات</a>
+      <a href="#how">المواعيد</a>
+      <a href="#doctor">الدكتورة</a>
+      <a href="#visit">موقعنا</a>
+      <a href="/admin">الاستقبال</a>
+    </nav>
+    <div class="socials">
+      <a href="#" aria-label="إنستغرام">Instagram</a>
+      <a href="#" aria-label="واتساب">WhatsApp</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year"></span> Bloom Skin Clinic</span>
+    <span class="latin-tag small">Bloom, on your time.</span>
+  </div>
+</footer>
+
+<script src="/api.js"></script>
+<script src="/script.js"></script>
+<script src="/book.js"></script>
+</body>
+</html>

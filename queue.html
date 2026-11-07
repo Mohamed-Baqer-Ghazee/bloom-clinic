@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دورك | Bloom Skin Clinic</title>
+<meta name="theme-color" content="#0D5C63">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/app.css">
+<link rel="icon" href="/assets/logo-mark.svg" type="image/svg+xml">
+</head>
+<body class="app-page">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="bloom-mark" viewBox="-70 -70 140 140">
+      <g fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round">
+        <g id="petal"><path d="M0,-20 C 22,-30 26,-62 0,-64 C -26,-62 -22,-30 0,-20 Z"/></g>
+        <use href="#petal" transform="rotate(60)"/><use href="#petal" transform="rotate(120)"/>
+        <use href="#petal" transform="rotate(180)"/><use href="#petal" transform="rotate(240)"/>
+        <use href="#petal" transform="rotate(300)"/>
+        <rect x="-15" y="-15" width="30" height="30" rx="8" transform="rotate(45)"/>
+      </g>
+      <circle cx="0" cy="0" r="3.5" fill="#F2784B"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="/" class="brand" aria-label="بلوم — الصفحة الرئيسية">
+      <svg class="brand-mark"><use href="#bloom-mark"/></svg>
+      <span class="brand-text"><span class="brand-latin">Bloom</span><span class="brand-ar brand-by">by Nada</span></span>
+    </a>
+    <a href="/#book" class="btn btn-ghost-light btn-sm">حجز جديد</a>
+  </div>
+</header>
+
+<main class="q-main pattern-bg">
+  <div class="q-card" id="qCard" aria-live="polite">
+    <p class="hint center">جاري التحميل…</p>
+  </div>
+  <p class="latin-tag q-tag">Bloom, on your time.</p>
+</main>
+
+<script src="/api.js"></script>
+<script src="/queue.js"></script>
+</body>
+</html>

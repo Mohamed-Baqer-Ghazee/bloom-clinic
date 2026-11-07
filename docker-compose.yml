@@ -1,0 +1,34 @@
+services:
+  app:
+    build: .
+    image: bloom-clinic:latest
+    restart: unless-stopped
+    environment:
+      BLOOM_ADMIN_PIN: ${BLOOM_ADMIN_PIN:?Set BLOOM_ADMIN_PIN in .env}
+      BLOOM_DOCTOR: ${BLOOM_DOCTOR:-[اسم الدكتورة]}
+      BLOOM_PUBLIC_URL: https://${DOMAIN:?Set DOMAIN in .env}
+    volumes:
+      - bloom-data:/app/data
+    expose:
+      - "8080"
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    environment:
+      DOMAIN: ${DOMAIN}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+
+volumes:
+  bloom-data:
+  caddy-data:
+  caddy-config:

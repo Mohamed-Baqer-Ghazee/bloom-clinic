@@ -1,0 +1,12 @@
+data/
+__pycache__/
+*.pyc
+.env
+.env.*
+Dockerfile
+.dockerignore
+docker-compose.yml
+Caddyfile
+deploy.sh
+*.md
+*.tar

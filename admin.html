@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الاستقبال | Bloom Skin Clinic</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0D5C63">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/app.css">
+<link rel="icon" href="/assets/logo-mark.svg" type="image/svg+xml">
+</head>
+<body class="app-page admin">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="bloom-mark" viewBox="-70 -70 140 140">
+      <g fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round">
+        <g id="petal"><path d="M0,-20 C 22,-30 26,-62 0,-64 C -26,-62 -22,-30 0,-20 Z"/></g>
+        <use href="#petal" transform="rotate(60)"/><use href="#petal" transform="rotate(120)"/>
+        <use href="#petal" transform="rotate(180)"/><use href="#petal" transform="rotate(240)"/>
+        <use href="#petal" transform="rotate(300)"/>
+        <rect x="-15" y="-15" width="30" height="30" rx="8" transform="rotate(45)"/>
+      </g>
+      <circle cx="0" cy="0" r="3.5" fill="#F2784B"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="/" class="brand">
+      <svg class="brand-mark"><use href="#bloom-mark"/></svg>
+      <span class="brand-text"><span class="brand-latin">Bloom</span><span class="brand-ar">الاستقبال</span></span>
+    </a>
+    <button class="btn btn-ghost-light btn-sm" id="logout" hidden>خروج</button>
+  </div>
+</header>
+
+<main class="container adm-main">
+  <!-- Login -->
+  <form class="adm-login" id="login" hidden>
+    <svg class="login-mark"><use href="#bloom-mark"/></svg>
+    <h1>لوحة الاستقبال</h1>
+    <p class="muted">اكتبي رمز الدخول</p>
+    <input id="pin" type="password" inputmode="numeric" dir="ltr" placeholder="••••" autocomplete="current-password">
+    <p class="bk-error" id="loginErr" hidden></p>
+    <button class="btn btn-coral">دخول</button>
+  </form>
+
+  <!-- Dashboard -->
+  <section id="dash" hidden>
+    <div class="adm-top">
+      <div class="date-nav">
+        <button class="icon-btn" id="prevDay" aria-label="اليوم السابق">→</button>
+        <div><h1 id="dayTitle"></h1><small id="daySub" class="muted"></small></div>
+        <button class="icon-btn" id="nextDay" aria-label="اليوم التالي">←</button>
+        <button class="btn btn-outline btn-sm" id="todayBtn">اليوم</button>
+      </div>
+      <div class="adm-buttons">
+        <button class="btn btn-outline" id="walkinBtn">+ مراجعة حضورية</button>
+        <button class="btn btn-coral" id="callNext">استدعاء التالي</button>
+      </div>
+    </div>
+
+    <form class="adm-walkin" id="walkin" hidden>
+      <select id="wService" required></select>
+      <input id="wName" placeholder="الاسم" required>
+      <input id="wPhone" type="tel" dir="ltr" placeholder="07XX XXX XXXX" required>
+      <button class="btn btn-coral btn-sm">إضافة لأقرب وقت</button>
+      <button class="btn btn-text btn-sm" type="button" id="walkinCancel">إلغاء</button>
+    </form>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="adm-filters" id="admFilters">
+      <button class="chip active" data-f="active">النشطة</button>
+      <button class="chip" data-f="all">الكل</button>
+      <button class="chip" data-f="closed">المنتهية والملغية</button>
+      <input id="search" class="adm-search" placeholder="بحث بالاسم أو الرقم أو رمز الحجز">
+    </div>
+
+    <div class="adm-list" id="list"></div>
+  </section>
+</main>
+
+<script src="/api.js"></script>
+<script src="/admin.js"></script>
+</body>
+</html>
